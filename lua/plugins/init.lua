@@ -1,0 +1,8 @@
+-- require('plugins.colorizer')
+require('plugins.barbar')
+require('plugins.completion')
+require('plugins.indentGuides')
+require('plugins.nvimtree')
+require('plugins.packer')
+require('plugins.telescop')
+require('plugins.treesitter')
