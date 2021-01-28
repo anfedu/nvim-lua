@@ -22,14 +22,14 @@ function Check_backspace()
     end
 end
 
-keymap('i', '<CR>', table.concat {
-    'pumvisible()',
-    '? complete_info()["selected"] != "-1"',
-    '? compe#confirm(lexima#expand("<LT>CR>", "i"))',
-    ': "<C-g>u".lexima#expand("<LT>CR>", "i")',
-    ': v:lua.Util.check_html_char() ? lexima#expand("<LT>CR>", "i")."<ESC>O"',
-    ': lexima#expand("<LT>CR>", "i")'
-}, {silent = true, expr = true})
+-- keymap('i', '<CR>', table.concat {
+--     'pumvisible()',
+--     '? complete_info()["selected"] != "-1"',
+--     '? compe#confirm(lexima#expand("<LT>CR>", "i"))',
+--     ': "<C-g>u".lexima#expand("<LT>CR>", "i")',
+--     ': v:lua.Util.check_html_char() ? lexima#expand("<LT>CR>", "i")."<ESC>O"',
+--     ': lexima#expand("<LT>CR>", "i")'
+-- }, {silent = true, expr = true})
 
 keymap('i', '<Tab>',
     'pumvisible() ? "<C-n>" : v:lua.Check_backspace() ? "<Tab>" : compe#confirm(lexima#expand("<LT>CR>", "i"))',

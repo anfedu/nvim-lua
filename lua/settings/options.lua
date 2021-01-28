@@ -84,7 +84,7 @@ local options = {
     wildmode = 'full',
     wildoptions = 'pum',
     winblend = 0,
-    wrap = true,
+    -- wrap = true,
     -- writebackup = true
 }
 setOptions(options)
