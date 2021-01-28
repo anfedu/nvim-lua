@@ -12,32 +12,27 @@ lspconfig.tsserver.setup {
 
 lspconfig.sumneko_lua.setup {
     on_init = custom_on_init,
-    cmd = {'lua-language-server'},
-    settings = {
-        Lua = {
-            runtime = {version = 'LuaJIT', path = vim.split(package.path, ';')},
-            completion = {keywordSnippet = 'Disable'},
-            diagnostics = {enable = true, globals = {'vim', 'awesome', 'use'}}
-        }
-    }
+    filetypes = {'lua'},
+		cmd = {'/home/nuril/Templates/lua-language-server'},
+    root_dir = function() return vim.loop.cwd() end
 }
 
-lspconfig.jedi_language_server.setup {
-    on_init = custom_on_init,
-    settings = {
-        jedi = {
-            enable = true,
-            startupMessage = true,
-            markupKindPreferred = 'markdown',
-            jediSettings = {
-                autoImportModules = {},
-                completion = {disableSnippets = false},
-                diagnostics = {enable = true, didOpen = true, didSave = true, didChange = true}
-            },
-            workspace = {extraPaths = {}}
-        }
-    }
-}
+-- lspconfig.jedi_language_server.setup {
+--     on_init = custom_on_init,
+--     settings = {
+--         jedi = {
+--             enable = true,
+--             startupMessage = true,
+--             markupKindPreferred = 'markdown',
+--             jediSettings = {
+--                 autoImportModules = {},
+--                 completion = {disableSnippets = false},
+--                 diagnostics = {enable = true, didOpen = true, didSave = true, didChange = true}
+--             },
+--             workspace = {extraPaths = {}}
+--         }
+--     }
+-- }
 
 lspconfig.html.setup {filetypes = {'html'}, on_init = custom_on_init}
 
@@ -47,8 +42,10 @@ lspconfig.jsonls.setup {on_init = custom_on_init}
 
 lspconfig.bashls.setup {on_init = custom_on_init}
 
-lspconfig.texlab.setup {on_init = custom_on_init}
+lspconfig.vuels.setup {on_init = custom_on_init}
 
--- texlab not working if file or buffer is empty
-lspconfig.texlab.setup {on_init = custom_on_init, filetypes = {'tex', 'bib', 'plaintex'}}
+-- lspconfig.texlab.setup {on_init = custom_on_init}
+
+-- <--texlab not working if file or buffer is empty-->
+-- lspconfig.texlab.setup {on_init = custom_on_init, filetypes = {'tex', 'bib', 'plaintex'}}
 
