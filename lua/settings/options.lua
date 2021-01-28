@@ -19,6 +19,7 @@ local options = {
     bg = 'dark',
     binary = true,
     bomb = true,
+	shell = '/usr/bin/zsh',
     clipboard = 'unnamedplus',
     compatible = false,
     completeopt = 'menuone,noselect',

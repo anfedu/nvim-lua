@@ -40,15 +40,15 @@ return require('packer').startup(function()
 	-- Commentary
 	use 'tomtom/tcomment_vim'
 	-- use 'glepnir/prodoc.nvim'
-	
+
 	-- Explorer
-	use 'kyazdani42/nvim-web-devicons' 
+	use 'kyazdani42/nvim-web-devicons'
 	use 'kyazdani42/nvim-tree.lua'
 
 	-- multiple cursor
 	use 'terryma/vim-multiple-cursors'
 
-	-- emmet 
+	-- emmet
 	use 'mattn/emmet-vim'
 
 	-- statusline
@@ -63,13 +63,14 @@ return require('packer').startup(function()
 	use 'romgrk/barbar.nvim'
 	-- use 'akinsho/nvim-bufferline.lua'
 
-	-- colorshcme 
+	-- colorshcme
 	use 'glepnir/zephyr-nvim'
   use {'dikiaap/minimalist', disable = true}
   use 'norcalli/nvim-colorizer.lua'
-	
+
 	-- nvim-lsp
     use 'neovim/nvim-lspconfig'
+    use 'anott03/nvim-lspinstall'
     use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim' }}
     use 'lukas-reineke/format.nvim'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }

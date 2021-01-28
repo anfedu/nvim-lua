@@ -5,7 +5,7 @@ local function custom_on_init()
 end
 
 lspconfig.tsserver.setup {
-    filetypes = {'javascript', 'typescript', 'typescriptreact'},
+    filetypes = {'javascript', 'javascriptreact', 'typescript', 'typescriptreact'},
     on_init = custom_on_init,
     root_dir = function() return vim.loop.cwd() end
 }
@@ -43,15 +43,11 @@ lspconfig.html.setup {filetypes = {'html'}, on_init = custom_on_init}
 
 lspconfig.cssls.setup {on_init = custom_on_init, root_dir = function() return vim.loop.cwd() end}
 
-lspconfig.vimls.setup {on_init = custom_on_init}
-
 lspconfig.jsonls.setup {on_init = custom_on_init}
 
 lspconfig.bashls.setup {on_init = custom_on_init}
 
 lspconfig.texlab.setup {on_init = custom_on_init}
-
-lspconfig.clangd.setup {on_init = custom_on_init}
 
 -- texlab not working if file or buffer is empty
 lspconfig.texlab.setup {on_init = custom_on_init, filetypes = {'tex', 'bib', 'plaintex'}}
