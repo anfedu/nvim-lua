@@ -22,7 +22,9 @@ require "format".setup {
                 function(file)
                     return string.format("luafmt -l %s -w replace %s", vim.bo.textwidth, file)
                 end
-            }
+
+
+  }
         }
     },
     go = {
@@ -33,8 +35,6 @@ require "format".setup {
     },
     javascript = {
         {cmd = {"prettier -w", "./node_modules/.bin/eslint --fix"}}
-        tempfile_postfix = ".tmp"
-      }
     },
     typescript = {
         {cmd = {"prettier -w", "./node_modules/.bin/eslint --fix"}}
@@ -56,7 +56,10 @@ require "format".setup {
     }
 }
 
+vim.api.nvim_exec([[
 augroup Format
     autocmd!
     autocmd BufWritePost * FormatWrite
 augroup END
+
+]], true)
