@@ -61,7 +61,6 @@ return require('packer').startup(function()
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
 }
 	use 'romgrk/barbar.nvim'
-	-- use 'akinsho/nvim-bufferline.lua'
 
 	-- colorshcme
 	use 'glepnir/zephyr-nvim'
@@ -69,17 +68,17 @@ return require('packer').startup(function()
   use 'norcalli/nvim-colorizer.lua'
 
 	-- nvim-lsp
-    use 'neovim/nvim-lspconfig'
-    use 'anott03/nvim-lspinstall'
-    use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim' }}
-    use 'lukas-reineke/format.nvim'
-    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-    use { 'hrsh7th/nvim-compe', requires = { 'hrsh7th/vim-vsnip', 'hrsh7th/vim-vsnip-integ' }}
+	use 'neovim/nvim-lspconfig'
+	use 'anott03/nvim-lspinstall'
+	use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim' }}
+	use 'lukas-reineke/format.nvim'
+	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+	use { 'hrsh7th/nvim-compe', requires = { 'hrsh7th/vim-vsnip', 'hrsh7th/vim-vsnip-integ' }}
 
 
 	-- Git
-	--use 'airblade/vim-gitgutter'
-	--use 'tpope/vim-fugitive'
+	use 'airblade/vim-gitgutter'
+	-- use 'tpope/vim-fugitive'
 
 
 end)

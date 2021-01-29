@@ -44,6 +44,8 @@ lspconfig.bashls.setup {on_init = custom_on_init}
 
 lspconfig.vuels.setup {on_init = custom_on_init}
 
+lspconfig.yamlls.setup {on_init = custom_on_init}
+
 -- lspconfig.texlab.setup {on_init = custom_on_init}
 
 -- <--texlab not working if file or buffer is empty-->
