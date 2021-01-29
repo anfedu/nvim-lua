@@ -21,10 +21,10 @@ local set_keybindings = function()
 
         -- custom save file
         {'n', '<C-S>', ':update!<CR>', {noremap= true, silent = true}},
-        {'n', '<M-q>', '<CMD>:q!<CR>', {noremap= true, silent= true}}, 
+        {'n', '<M-q>', '<CMD>:q!<CR>', {noremap= true, silent= true}},
 
         -- colorizer
-        {'n', '<A-c>', ':ColorizerToggle<CR>', {noremap= true, silent= true}}, 
+        {'n', '<A-c>', ':ColorizerToggle<CR>', {noremap= true, silent= true}},
 
         -- git
         -- {'n', '<Leader>ga', '<CMD>Gwrite<CR>', {noremap = true, silent = false}},
@@ -38,6 +38,7 @@ local set_keybindings = function()
 
         -- Search for visually selected text
         {'v', '<Leader>v', 'y/\\V<C-R>=escape(@",\'/\\\')<CR><CR>', {noremap = false, silent = false}}
+
     }
 
     for _, key in pairs(keybindings) do keymap(key[1], key[2], key[3], key[4]) end
