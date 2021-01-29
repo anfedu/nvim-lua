@@ -1,19 +1,14 @@
 -- plugin config
-require('plugins'
-)
+require('plugins')
 
 -- keybindings config
-require('keybindings'
-)
+require('keybindings')
 
 -- settings config
-require('settings'
-)
+require('settings')
 
 -- statusline
-require('statusline'
-)
+require('statusline')
 
 -- lsp & completion
-require('lsp'
-)
+require('lsp')
