@@ -9,17 +9,17 @@ require"format".setup {
       end_pattern = "^EOF$"
     }
   },
-  lua = {
-    {
-      cmd = {
-        function(file)
-          return string.format("lua-format -c %s -i %s", os.getenv("HOME"
-                 ) .. "/.config/nvim/luaformatter.yaml", file
-                 )
-        end
-      }
-    }
-  },
+lua = {
+{
+cmd = {
+function(file)
+return string.format("lua-format -c %s -i %s", os.getenv("HOME"
+) .. "/.config/nvim/luaformatter.yaml", file
+)
+end
+},
+}
+},
   go = {{cmd = {"gofmt -w", "goimports -w"}, tempfile_postfix = ".tmp"}},
   vimwiki = {
     {
