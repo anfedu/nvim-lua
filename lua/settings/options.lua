@@ -24,6 +24,7 @@ local options = {
     compatible = false,
     completeopt = 'menuone,noselect',
     conceallevel = 0,
+		cursorline = true,
     -- cursorcolumn = false,
     swapfile=false,
     encoding = 'utf-8',

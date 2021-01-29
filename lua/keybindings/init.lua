@@ -45,3 +45,11 @@ local set_keybindings = function()
 end
 -- vim.cmd('')
 set_keybindings()
+
+
+vim.api.nvim_exec([[
+augroup Format
+  autocmd filetype javascript nnoremap <F4> :w <bar> exec '!node '.shellescape('%')<CR>
+  autocmd filetype go nnoremap <F4> :w <bar> exec '!go run '.shellescape('%')<CR>
+augroup END
+]], true)

@@ -9,6 +9,22 @@ require "format".setup {
             end_pattern = "^EOF$"
         }
     },
+lua = {
+      {
+ cmd = {
+            function(file)
+                return string.format("lua-format -c % -i", os.getenv("HOME") .. "/.config/nvim/luaformatter.yaml", file)
+            end
+        },
+        tempfile_dir = '/tmp'
+      }
+  },
+    go = {
+        {
+            cmd = {"gofmt -w", "goimports -w"},
+            tempfile_postfix = ".tmp"
+        }
+    },
     vimwiki = {
         {
             cmd = {"prettier -w --parser babel"},
@@ -16,22 +32,8 @@ require "format".setup {
             end_pattern = "^}}}$"
         }
     },
-    lua = {
-        {
-            cmd = {
-                function(file)
-                    return string.format("luafmt -l %s -w replace %s", vim.bo.textwidth, file)
-                end
-
-
-  }
-        }
-    },
-    go = {
-        {
-            cmd = {"gofmt -w", "goimports -w"},
-            tempfile_postfix = ".tmp"
-        }
+    json = {
+        {cmd = {"prettier -w", "./node_modules/.bin/eslint --fix"}}
     },
     javascript = {
         {cmd = {"prettier -w", "./node_modules/.bin/eslint --fix"}}
@@ -45,14 +47,14 @@ require "format".setup {
     typescriptreact = {
         {cmd = {"prettier -w", "./node_modules/.bin/eslint --fix"}}
     },
+    graphql = {
+        {cmd = {"prettier -w", "./node_modules/.bin/eslint --fix"}}
+    },
+    yaml = {
+        {cmd = {"prettier -w", "./node_modules/.bin/eslint --fix"}}
+    },
     markdown = {
-        {cmd = {"prettier -w"}},
-        {
-            cmd = {"black"},
-            start_pattern = "^```python$",
-            end_pattern = "^```$",
-            target = "current"
-        }
+        {cmd = {"prettier -w", "./node_modules/.bin/eslint --fix"}}
     }
 }
 
@@ -61,5 +63,4 @@ augroup Format
     autocmd!
     autocmd BufWritePost * FormatWrite
 augroup END
-
 ]], true)
