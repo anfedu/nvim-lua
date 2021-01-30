@@ -7,9 +7,6 @@ local set_keybindings = function()
     {'n', '<C-PageUp>', ':bp<CR>', {noremap = true, silent = true}},
     {'n', '<C-PageDown>', ':bn<CR>', {noremap = true, silent = true}},
 
-    -- terminal mode
-    {'t', '<Esc>', '<C-\\><C-n>', {noremap = true, silent = true}},
-
     -- nvim tree.lua
     {
       'n',
@@ -55,10 +52,8 @@ local set_keybindings = function()
 
   }
 
-  for _, key in pairs(keybindings
-                ) do
-    keymap(key[1], key[2], key[3], key[4]
-    )
+  for _, key in pairs(keybindings) do
+    keymap(key[1], key[2], key[3], key[4])
   end
 end
 -- vim.cmd('')
@@ -69,5 +64,4 @@ augroup Format
   autocmd filetype javascript nnoremap <F4> :w <bar> exec '!node '.shellescape('%')<CR>
   autocmd filetype go nnoremap <F4> :w <bar> exec '!go run '.shellescape('%')<CR>
 augroup END
-]], true
-)
+]], true)

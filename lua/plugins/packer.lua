@@ -46,11 +46,14 @@ return require('packer').startup(function()
   use 'mattn/emmet-vim'
 
   -- statusline
-  use {'glepnir/galaxyline.nvim', branch = 'main', -- your statusline
-  config = function()
-    require 'my_statusline'
-  end, -- some optional icons
-  requires = {'kyazdani42/nvim-web-devicons', opt = true}}
+  use {
+    'glepnir/galaxyline.nvim',
+    branch = 'main', -- your statusline
+    config = function()
+      require 'my_statusline'
+    end, -- some optional icons
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
   use 'romgrk/barbar.nvim'
 
   -- colorshcme
@@ -61,12 +64,17 @@ return require('packer').startup(function()
   -- nvim-lsp
   use 'neovim/nvim-lspconfig'
   use 'anott03/nvim-lspinstall'
-  use {'nvim-telescope/telescope.nvim',
-    requires = {'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim'}}
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim'}
+  }
   use 'lukas-reineke/format.nvim'
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-  use {'hrsh7th/nvim-compe',
-    requires = {'hrsh7th/vim-vsnip', 'hrsh7th/vim-vsnip-integ'}}
+  use {
+    'hrsh7th/nvim-compe',
+    requires = {'hrsh7th/vim-vsnip', 'hrsh7th/vim-vsnip-integ'}
+  }
+  use 'cohama/lexima.vim'
 
   -- Git
 
