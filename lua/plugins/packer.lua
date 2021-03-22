@@ -28,12 +28,17 @@ return require('packer').startup(function()
   use 'tpope/vim-surround'
   -- use 'luochen1990/rainbow'
 
+  -- syntax
+  -- use 'sheerun/vim-polyglot'
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+
   -- Indentline
   use 'glepnir/indent-guides.nvim'
 
   -- Commentary
-  use 'tomtom/tcomment_vim'
+  -- use 'tomtom/tcomment_vim'
   -- use 'glepnir/prodoc.nvim'
+  use 'b3nj5m1n/kommentary'
 
   -- Explorer
   use 'kyazdani42/nvim-web-devicons'
@@ -69,12 +74,15 @@ return require('packer').startup(function()
     requires = {'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim'}
   }
   use 'lukas-reineke/format.nvim'
-  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use {
     'hrsh7th/nvim-compe',
     requires = {'hrsh7th/vim-vsnip', 'hrsh7th/vim-vsnip-integ'}
   }
   use 'cohama/lexima.vim'
+
+  -- coc nvim
+  -- use {'neoclide/coc.nvim, branch: release'}
+  -- use 'rafcamlet/coc-nvim-lua'
 
   -- Git
 

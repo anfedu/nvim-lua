@@ -4,8 +4,8 @@ local set_keybindings = function()
   local keybindings = {
     -- Buffers
     {'n', '<C-t>', ':tabnew<CR>', {noremap = true, silent = true}},
-    {'n', '<C-PageUp>', ':bp<CR>', {noremap = true, silent = true}},
-    {'n', '<C-PageDown>', ':bn<CR>', {noremap = true, silent = true}},
+    {'n', '<C-Up>', ':bp<CR>', {noremap = true, silent = true}},
+    {'n', '<C-Down>', ':bn<CR>', {noremap = true, silent = true}},
 
     -- nvim tree.lua
     {
@@ -62,6 +62,7 @@ set_keybindings()
 vim.api.nvim_exec([[
 augroup Format
   autocmd filetype javascript nnoremap <F4> :w <bar> exec '!node '.shellescape('%')<CR>
+  autocmd filetype typescript nnoremap <F4> :w <bar> exec '!node '.shellescape('%')<CR>
   autocmd filetype go nnoremap <F4> :w <bar> exec '!go run '.shellescape('%')<CR>
 augroup END
 ]], true)

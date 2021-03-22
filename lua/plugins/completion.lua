@@ -28,3 +28,5 @@ keymap('i', '<Tab>',
 
 keymap('i', '<C-space>', '<C-r>=compe#complete()<CR>',
   {noremap = false, silent = true})
+
+vim.g.completion_confirm_key = "<C-0>"

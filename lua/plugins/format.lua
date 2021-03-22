@@ -13,9 +13,8 @@ require"format".setup {
     {
       cmd = {
         function(file)
-          return string.format("lua-format -c %s -i %s", os.getenv("HOME"
-                 ) .. "/.config/nvim/luaformatter.yaml", file
-                 )
+          return string.format("lua-format -c %s -i %s", os.getenv("HOME")
+            .. "/.config/nvim/luaformatter.yaml", file)
         end
       }
     }
@@ -47,5 +46,4 @@ augroup Format
     autocmd!
     autocmd BufWritePost * FormatWrite
 augroup END
-]], true
-)
+]], true)

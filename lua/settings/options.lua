@@ -13,7 +13,7 @@ end
 local options = {
   autoindent = true,
   autoread = true,
-  backspace = 'indent,eol,start',
+  -- backspace = 'indent,eol,start',
   -- backup = true,
   -- backupdir = '~/.local/share/nvim/backup',
   bg = 'dark',
