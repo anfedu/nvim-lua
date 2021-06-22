@@ -1,14 +1,20 @@
--- plugin config
-require('plugins')
+-- neovim basic configuration
+require("settings")
 
--- keybindings config
-require('keybindings')
+-- install packer
+require("modules.packer.bootstrapping")
 
--- settings config
-require('settings')
+-- neovim package manager
+require("modules.packer")
 
--- statusline
-require('statusline')
+-- neovim lsp client
+require("modules.lsp")
 
--- lsp & completion
-require('lsp')
+-- neovim statusline
+require("modules.statusline")
+
+-- neovim plugins configuration
+require("plugins")
+
+-- neovim keybindings
+require("keybindings")
