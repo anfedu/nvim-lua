@@ -8,7 +8,7 @@ require("modules.packer.bootstrapping")
 require("modules.packer")
 
 -- neovim lsp client
-require("modules.lsp")
+-- require("modules.lsp")
 
 -- neovim statusline
 require("modules.statusline")
