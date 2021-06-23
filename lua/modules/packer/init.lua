@@ -17,6 +17,7 @@ packer.startup(function()
 
     -- Auto pairs
     use({ "windwp/nvim-autopairs" })
+    use({ "tpope/vim-surround" })
 
     -- use({ "machakann/vim-sandwich" })
 
@@ -26,7 +27,6 @@ packer.startup(function()
         run = ":TSUpdate",
         requires = {
             "p00f/nvim-ts-rainbow",
-            -- "windwp/nvim-ts-autotag",
         },
     })
 
@@ -67,28 +67,6 @@ packer.startup(function()
     use("glepnir/zephyr-nvim")
     use("norcalli/nvim-colorizer.lua")
 
-    -- nvim-lsp
-    -- use({
-    --     "neovim/nvim-lspconfig",
-    --     requires = {
-    --         "glepnir/lspsaga.nvim",
-    --         "stevearc/aerial.nvim",
-    --     },
-    -- })
-
-    -- use({
-    --     "hrsh7th/nvim-compe",
-    --     requires = { "hrsh7th/vim-vsnip" },
-    -- })
-    -- use({ "code-biscuits/nvim-biscuits" })
-    -- use({
-    --     "folke/lsp-trouble.nvim",
-    --     requires = { "kyazdani42/nvim-web-devicons" },
-    -- })
-
-    -- code formatter
-    -- use({ "lukas-reineke/format.nvim" })
-
     -- fuzzy finder
     use({
         "nvim-telescope/telescope.nvim",
@@ -105,21 +83,13 @@ packer.startup(function()
     --     requires = { "mattn/webapi-vim" },
     --     opt = true,
     -- })
-    use({
-        "lewis6991/gitsigns.nvim",
-        requires = { "nvim-lua/plenary.nvim" },
-    })
-    use({ "TimUntersberger/neogit" })
 
-    -- smooth scroll
-    -- use({ "karb94/neoscroll.nvim" })
-
-    -- rest.nvim
     -- use({
-    --     "NTBBloodbath/rest.nvim",
+    --     "lewis6991/gitsigns.nvim",
     --     requires = { "nvim-lua/plenary.nvim" },
-    --     ft = "http",
     -- })
+    -- use({ "TimUntersberger/neogit" })
+
 end)
 
 return packer

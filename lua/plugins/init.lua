@@ -13,7 +13,7 @@ require("plugins.comment")
 
 -- neovim git{_,hub} support
 -- require("plugins.gitsigns")
-require("plugins.neogit")
+-- require("plugins.neogit")
 
 -- neovim code completion and code formater
 -- require("plugins.completion")
