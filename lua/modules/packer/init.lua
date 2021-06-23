@@ -31,7 +31,7 @@ packer.startup(function()
     })
 
 		-- completion
-		use({ "neoclide/coc.nvim" })
+    use({ "neoclide/coc.nvim" })
 
     -- Indentline
     -- use({
@@ -69,29 +69,6 @@ packer.startup(function()
     -- colorshcme
     use("glepnir/zephyr-nvim")
     use("norcalli/nvim-colorizer.lua")
-
-    -- fuzzy finder
-    -- use({
-    --     "nvim-telescope/telescope.nvim",
-    --     requires = {
-    --         "nvim-lua/popup.nvim",
-    --         "nvim-lua/plenary.nvim",
-    --         "nvim-telescope/telescope-fzy-native.nvim",
-    --     },
-    -- })
-
-    -- git
-    -- use({
-    --     "mattn/gist-vim",
-    --     requires = { "mattn/webapi-vim" },
-    --     opt = true,
-    -- })
-
-    -- use({
-    --     "lewis6991/gitsigns.nvim",
-    --     requires = { "nvim-lua/plenary.nvim" },
-    -- })
-    -- use({ "TimUntersberger/neogit" })
 
 end)
 

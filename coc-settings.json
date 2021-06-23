@@ -6,6 +6,7 @@
   "eslint.filetypes": ["javascriptreact", "typescriptreact"],
   "coc.preferences.formatOnSaveFiletypes": [
     "sh",
+    "lua",
     "vim",
     "json",
     "yml",
