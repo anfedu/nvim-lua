@@ -30,6 +30,9 @@ packer.startup(function()
         },
     })
 
+		-- completion
+		use({ "neoclide/coc.nvim" })
+
     -- Indentline
     -- use({
     --     "lukas-reineke/indent-blankline.nvim",

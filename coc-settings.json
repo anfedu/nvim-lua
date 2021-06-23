@@ -1,0 +1,20 @@
+{
+  "eslint.autoFixOnSave": true,
+  "javascript.validate.enable": false,
+  "eslint.quiet": true,
+  "python.linting.enabled": false,
+  "eslint.filetypes": ["javascriptreact", "typescriptreact"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "sh",
+    "vim",
+    "json",
+    "yml",
+    "javascript",
+    "html",
+    "php",
+    "css",
+    "c",
+    "cpp",
+    "python"
+  ]
+}
