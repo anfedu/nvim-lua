@@ -6,7 +6,7 @@ require("plugins.nvimtree")
 -- require("plugins.neoscroll")
 
 -- neovim plugins for functionality
-require("plugins.telescope")
+-- require("plugins.telescope")
 require("plugins.autopairs")
 require("plugins.comment")
 -- require("plugins.biscuits")
