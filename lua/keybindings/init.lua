@@ -9,8 +9,8 @@ local set_keybindings = function()
     local keybindings = {
         -- Buffers
         { "n", "<C-t>", "<CMD>tabnew<CR>", noremap_silent },
-        { "n", "<C-Up>", "<CMD>BufferNext<CR>", noremap_silent },
-        { "n", "<C-Down>", "<CMD>BufferPrevious<CR>", noremap_silent },
+        { "n", "<C-Right>", "<CMD>BufferNext<CR>", noremap_silent },
+        { "n", "<C-Left>", "<CMD>BufferPrevious<CR>", noremap_silent },
         { "n", "<A-1>", "<CMD>BufferGoto 1<CR>", noremap_silent },
         { "n", "<A-2>", "<CMD>BufferGoto 2<CR>", noremap_silent },
         { "n", "<A-3>", "<CMD>BufferGoto 3<CR>", noremap_silent },
@@ -102,11 +102,8 @@ local set_keybindings = function()
         -- nvim tree.lua
         { "n", "<Leader>e", '<CMD>lua require("utils.nvimtree").toggle()<CR>', remap_nosilent },
 
-        -- rest.nvim
-        { "n", "<Leader>0", '<CMD>lua require("rest-nvim").run()<CR>', remap_nosilent },
-
-        -- code formater
-        { "n", "<leader>f", "<CMD>FormatWrite<CR>", noremap_silent },
+        -- coc-restclient
+        { "n", "<leader>0", "<CMD>CocCommand rest-client.request<CR>", noremap_silent },
     }
 
     for _, key in pairs(keybindings) do
