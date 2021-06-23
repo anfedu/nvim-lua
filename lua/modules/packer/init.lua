@@ -18,7 +18,7 @@ packer.startup(function()
     -- Auto pairs
     use({ "windwp/nvim-autopairs" })
 
-    use({ "machakann/vim-sandwich" })
+    -- use({ "machakann/vim-sandwich" })
 
     -- syntax
     use({
@@ -26,15 +26,15 @@ packer.startup(function()
         run = ":TSUpdate",
         requires = {
             "p00f/nvim-ts-rainbow",
-            "windwp/nvim-ts-autotag",
+            -- "windwp/nvim-ts-autotag",
         },
     })
 
     -- Indentline
-    use({
-        "lukas-reineke/indent-blankline.nvim",
-        branch = "lua",
-    })
+    -- use({
+    --     "lukas-reineke/indent-blankline.nvim",
+    --     branch = "lua",
+    -- })
 
     -- Commentary
     use({ "terrortylor/nvim-comment" })
@@ -68,26 +68,26 @@ packer.startup(function()
     use("norcalli/nvim-colorizer.lua")
 
     -- nvim-lsp
-    use({
-        "neovim/nvim-lspconfig",
-        requires = {
-            "glepnir/lspsaga.nvim",
-            "stevearc/aerial.nvim",
-        },
-    })
+    -- use({
+    --     "neovim/nvim-lspconfig",
+    --     requires = {
+    --         "glepnir/lspsaga.nvim",
+    --         "stevearc/aerial.nvim",
+    --     },
+    -- })
 
-    use({
-        "hrsh7th/nvim-compe",
-        requires = { "hrsh7th/vim-vsnip" },
-    })
-    use({ "code-biscuits/nvim-biscuits" })
-    use({
-        "folke/lsp-trouble.nvim",
-        requires = { "kyazdani42/nvim-web-devicons" },
-    })
+    -- use({
+    --     "hrsh7th/nvim-compe",
+    --     requires = { "hrsh7th/vim-vsnip" },
+    -- })
+    -- use({ "code-biscuits/nvim-biscuits" })
+    -- use({
+    --     "folke/lsp-trouble.nvim",
+    --     requires = { "kyazdani42/nvim-web-devicons" },
+    -- })
 
     -- code formatter
-    use({ "lukas-reineke/format.nvim" })
+    -- use({ "lukas-reineke/format.nvim" })
 
     -- fuzzy finder
     use({
@@ -100,11 +100,11 @@ packer.startup(function()
     })
 
     -- git
-    use({
-        "mattn/gist-vim",
-        requires = { "mattn/webapi-vim" },
-        opt = true,
-    })
+    -- use({
+    --     "mattn/gist-vim",
+    --     requires = { "mattn/webapi-vim" },
+    --     opt = true,
+    -- })
     use({
         "lewis6991/gitsigns.nvim",
         requires = { "nvim-lua/plenary.nvim" },
@@ -112,14 +112,14 @@ packer.startup(function()
     use({ "TimUntersberger/neogit" })
 
     -- smooth scroll
-    use({ "karb94/neoscroll.nvim" })
+    -- use({ "karb94/neoscroll.nvim" })
 
     -- rest.nvim
-    use({
-        "NTBBloodbath/rest.nvim",
-        requires = { "nvim-lua/plenary.nvim" },
-        ft = "http",
-    })
+    -- use({
+    --     "NTBBloodbath/rest.nvim",
+    --     requires = { "nvim-lua/plenary.nvim" },
+    --     ft = "http",
+    -- })
 end)
 
 return packer
