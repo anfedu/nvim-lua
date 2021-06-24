@@ -72,18 +72,6 @@ local set_keybindings = function()
             noremap_nosilent,
         },
 
-        -- emmet-vim
-        { "i", "<A-Tab>", "<C-y>,", remap_silent },
-        { "v", "<A-Tab>", "<C-y>,", remap_silent },
-
-        -- moving selection text
-        { "n", "<A-down>", "<CMD>m .+1<CR>==<CR>", noremap_silent },
-        { "n", "<A-up>", "<CMD>m .-2<CR>==<CR>", noremap_silent },
-        { "i", "<A-down>", "<Esc><CMD>m .+1<CR>==gi<CR>", noremap_silent },
-        { "i", "<A-up>", "<Esc><CMD>m .-2<CR>==gi<CR>", noremap_silent },
-        { "v", "<A-down>", "<CMD>m '>+1<CR>gv=gv<CR>", noremap_silent },
-        { "v", "<A-up>", "<CMD>m '<-2<CR>gv=gv<CR>", noremap_silent },
-
         -- custom save file
         { "n", "<C-S>", "<CMD>update!<CR>", noremap_silent },
         { "n", "<M-q>", "<CMD>:q!<CR>", noremap_silent },
@@ -117,11 +105,7 @@ set_keybindings()
 vim.api.nvim_exec(
     [[
     augroup Format
-      autocmd filetype python nnoremap <F4> :w <bar> exec '!python3 '.shellescape('%')<CR>
-      autocmd filetype c nnoremap <F4> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r')<CR>
-      autocmd filetype cpp nnoremap <F4> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r')<CR>
       autocmd filetype javascript nnoremap <F4> :w <bar> exec '!node '.shellescape('%')<CR>
-      autocmd filetype go nnoremap <F4> :w <bar> exec '!go run '.shellescape('%')<CR>
     augroup END
 ]],
     true

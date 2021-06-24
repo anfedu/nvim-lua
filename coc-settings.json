@@ -2,8 +2,8 @@
   "eslint.autoFixOnSave": true,
   "javascript.validate.enable": false,
   "eslint.quiet": true,
-  "python.linting.enabled": false,
   "eslint.filetypes": ["javascriptreact", "typescriptreact"],
+  "rest-client.showHeaders": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "sh",
     "lua",
@@ -12,10 +12,6 @@
     "yml",
     "javascript",
     "html",
-    "php",
-    "css",
-    "c",
-    "cpp",
-    "python"
+    "css"
   ]
 }
