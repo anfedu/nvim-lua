@@ -1,7 +1,13 @@
 local keymap = vim.api.nvim_set_keymap
 
+function _G.check_backspace()
+    local col = vim.api.nvim_win_get_cursor(0)[2]
+    return (col == 0 or vim.api.nvim_get_current_line():sub(col, col):match("%s")) and true
+end
+
 local set_keybindings = function()
     local noremap_silent = { noremap = true, silent = true }
+    local noremap_silent_expr = { noremap = true, silent = true, expr = true }
     local noremap_nosilent = { noremap = true, silent = false }
     local remap_silent = { noremap = false, silent = true }
     local remap_nosilent = { noremap = false, silent = true }
@@ -93,6 +99,13 @@ local set_keybindings = function()
         -- coc-restclient
         { "n", "<leader>0", "<CMD>CocCommand rest-client.request<CR>", noremap_silent },
 
+        -- coc.nvim
+        {
+            "i",
+            "<TAB>",
+            [[pumvisible() ? coc#_select_confirm() : coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" : v:lua.check_backspace() ? "\<TAB>" : coc#refresh()]],
+            noremap_silent_expr,
+        },
     }
 
     for _, key in pairs(keybindings) do
@@ -111,4 +124,3 @@ vim.api.nvim_exec(
 ]],
     true
 )
-
