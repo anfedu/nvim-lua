@@ -2,7 +2,6 @@
   "eslint.autoFixOnSave": true,
   "javascript.validate.enable": false,
   "eslint.quiet": true,
-  "eslint.filetypes": ["javascriptreact", "typescriptreact"],
   "rest-client.showHeaders": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "sh",
