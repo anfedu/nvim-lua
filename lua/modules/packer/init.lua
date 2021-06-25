@@ -16,7 +16,8 @@ packer.startup(function()
     use({ "wbthomason/packer.nvim", opt = true })
 
     -- Auto pairs
-    use({ "windwp/nvim-autopairs" })
+    -- use({ "windwp/nvim-autopairs" })
+    use({ "jiangmiao/auto-pairs" })
     use({ "tpope/vim-surround" })
 
     -- use({ "machakann/vim-sandwich" })

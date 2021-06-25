@@ -3,6 +3,6 @@ require("plugins.barbar")
 require("plugins.treesitter")
 require("plugins.nvimtree")
 require("plugins.comment")
-require("plugins.autopairs")
+-- require("plugins.autopairs")
 
 
