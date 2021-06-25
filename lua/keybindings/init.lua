@@ -92,6 +92,7 @@ local set_keybindings = function()
 
         -- coc-restclient
         { "n", "<leader>0", "<CMD>CocCommand rest-client.request<CR>", noremap_silent },
+
     }
 
     for _, key in pairs(keybindings) do
@@ -110,3 +111,4 @@ vim.api.nvim_exec(
 ]],
     true
 )
+

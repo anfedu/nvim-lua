@@ -7,9 +7,6 @@ require("modules.packer.bootstrapping")
 -- neovim package manager
 require("modules.packer")
 
--- neovim lsp client
--- require("modules.lsp")
-
 -- neovim statusline
 require("modules.statusline")
 
@@ -18,3 +15,4 @@ require("plugins")
 
 -- neovim keybindings
 require("keybindings")
+

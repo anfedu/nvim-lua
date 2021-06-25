@@ -11,8 +11,8 @@ local function setOptions(options)
 end
 
 local options = {
-  autoindent = true,
-  autoread = true,
+  -- autoindent = true,
+  -- autoread = true,
   -- backspace = 'indent,eol,start',
   -- backup = true,
   -- backupdir = '~/.local/share/nvim/backup',
