@@ -106,6 +106,12 @@ local set_keybindings = function()
             [[pumvisible() ? coc#_select_confirm() : coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" : v:lua.check_backspace() ? "\<TAB>" : coc#refresh()]],
             noremap_silent_expr,
         },
+
+        {
+            "i",
+            "<C-space>", [[coc#refresh()]],
+            noremap_silent_expr,
+        },
     }
 
     for _, key in pairs(keybindings) do
