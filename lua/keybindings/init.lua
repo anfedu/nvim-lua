@@ -28,56 +28,6 @@ local set_keybindings = function()
         { "n", "<A-9>", "<CMD>BufferGoto 9<CR>", noremap_silent },
         { "n", "<A-0>", "<CMD>BufferLast<CR>", noremap_silent },
 
-        -- telescope
-        {
-            "n",
-            "<Leader><space>",
-            '<CMD>lua require("telescope.builtin").oldfiles({file_ignore_patterns = {"/usr/share/nvim/runtime/*"}})<CR>',
-            noremap_nosilent,
-        },
-        {
-            "n",
-            "<Leader>b",
-            '<CMD>lua require("telescope.builtin").buffers()<CR>',
-            noremap_nosilent,
-        },
-        {
-            "n",
-            "<Leader>o",
-            '<CMD>lua require("telescope.builtin").find_files()<CR>',
-            noremap_nosilent,
-        },
-        {
-            "n",
-            "<Leader>m",
-            '<cmd>lua require("telescope.builtin").marks()<cr>',
-            noremap_nosilent,
-        },
-        {
-            "n",
-            "<Leader><Leader>",
-            '<CMD>lua require("telescope.builtin").builtin({previewer = false})<CR>',
-            noremap_nosilent,
-        },
-        {
-            "n",
-            "<Leader>k",
-            '<CMD>lua require("telescope.builtin").keymaps()<CR>',
-            noremap_nosilent,
-        },
-        {
-            "n",
-            "<Leader>/",
-            '<CMD>lua require("telescope.builtin").current_buffer_fuzzy_find()<CR>',
-            noremap_nosilent,
-        },
-        {
-            "n",
-            "<Leader>?",
-            '<CMD>lua require("telescope.builtin").grep_string()<CR>',
-            noremap_nosilent,
-        },
-
         -- custom save file
         { "n", "<C-S>", "<CMD>update!<CR>", noremap_silent },
         { "n", "<M-q>", "<CMD>:q!<CR>", noremap_silent },
