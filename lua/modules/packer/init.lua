@@ -71,6 +71,9 @@ packer.startup(function()
     use("glepnir/zephyr-nvim")
     use("norcalli/nvim-colorizer.lua")
 
+		-- react snippets
+		use("epilande/vim-react-snippets")
+
 end)
 
 return packer
