@@ -74,6 +74,8 @@ packer.startup(function()
 		-- react snippets
 		use("epilande/vim-react-snippets")
 
+		-- git
+		use("tpope/vim-fugitive")
 end)
 
 return packer
