@@ -75,7 +75,8 @@ packer.startup(function()
 		use("epilande/vim-react-snippets")
 
 		-- git
-		use("tpope/vim-fugitive")
+    use 'nvim-lua/plenary.nvim'
+    use 'ruifm/gitlinker.nvim'
 end)
 
 return packer
