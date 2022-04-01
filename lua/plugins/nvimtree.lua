@@ -1,6 +1,5 @@
 -- vim.g.nvim_tree_side = "left"
 -- -- vim.g.nvim_tree_width = 35
--- vim.g.nvim_tree_ignore = { "node_modules", ".cache" }
 -- vim.g.nvim_tree_gitignore = 1
 -- vim.g.nvim_tree_auto_open = 0
 -- vim.g.nvim_tree_auto_close = 0
@@ -16,6 +15,7 @@
 -- vim.g.nvim_tree_lsp_diagnostics=0
 -- vim.g.nvim_tree_hijack_cursor = 0
 vim.g.nvim_tree_show_icons = { git = 1, folders = 1, files = 1 }
+-- vim.g.nvim_tree_ignore = { "node_modules", ".cache" }
 
 vim.g.nvim_tree_icons = {
     default = "",
