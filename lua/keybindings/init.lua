@@ -44,10 +44,10 @@ local set_keybindings = function()
         },
 
         -- nvim tree.lua
-        { "n", "<Leader>e", '<CMD>lua require("utils.nvimtree").toggle()<CR>', remap_nosilent },
+        { "n", "<Leader>e", '<CMD>NvimTreeToggle<CR>', remap_nosilent },
 
         -- coc-restclient
-        { "n", "<M-Enter>", "<CMD>CocCommand rest-client.request<CR>", noremap_silent },
+        { "n", "<leader>0", "<CMD>CocCommand rest-client.request<CR>", noremap_silent },
 
         -- coc.nvim
         {
