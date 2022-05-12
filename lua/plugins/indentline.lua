@@ -1,28 +1,16 @@
-vim.g.indent_blankline_char = "│"
-vim.g.indent_blankline_use_treesitter = true
-vim.g.indent_blankline_show_current_context = true
-vim.g.indent_blankline_filetype_exclude = {
-    "NvimTree",
-    "Preview",
-    "__doc__",
-    "dashboard",
-    "dashpreview",
-    "fzf",
-    "help",
-    "log",
-    "man",
-    "markdown",
-    "nerdtree",
-    "peekaboo",
-    "sagahover",
-    "startify",
-    "terminal",
-    "translator",
-    "vista",
-    "packer",
-    "aerial",
-    "lspinfo",
-    "lspsagafinder",
-    "Trouble"
+-- vim.opt.termguicolors = true
+vim.cmd [[highlight IndentBlanklineIndent1 guibg=#1f1f1f gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guibg=#2a2a2a gui=nocombine]]
+
+require("indent_blankline").setup {
+    char = "",
+    char_highlight_list = {
+        "IndentBlanklineIndent1",
+        "IndentBlanklineIndent2",
+    },
+    space_char_highlight_list = {
+        "IndentBlanklineIndent1",
+        "IndentBlanklineIndent2",
+    },
+    show_trailing_blankline_indent = false,
 }
-vim.g.indent_blankline_buftype_exclude = { "terminal", "man", "trouble" }

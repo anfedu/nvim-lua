@@ -35,10 +35,7 @@ packer.startup(function()
     use({ "neoclide/coc.nvim" })
 
     -- Indentline
-    -- use({
-    --     "lukas-reineke/indent-blankline.nvim",
-    --     branch = "lua",
-    -- })
+    -- use({ "lukas-reineke/indent-blankline.nvim" }) 
 
     -- Commentary
     use({ "terrortylor/nvim-comment" })
