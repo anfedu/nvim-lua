@@ -46,6 +46,9 @@ local set_keybindings = function()
         -- nvim tree.lua
         { "n", "<Leader>e", '<CMD>NvimTreeToggle<CR>', remap_nosilent },
 
+        -- telescope live_grep
+        { "n", "<leader>f", '<CMD>Telescope live_grep<CR>', remap_nosilent },
+
         -- coc-restclient
         { "n", "<leader>0", "<CMD>CocCommand rest-client.request<CR>", noremap_silent },
 
