@@ -73,7 +73,14 @@ packer.startup(function()
 
 		-- git
     use 'nvim-lua/plenary.nvim'
-    use 'ruifm/gitlinker.nvim'
+    -- use 'ruifm/gitlinker.nvim'
+		use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+
+		-- search 
+		use {
+			'nvim-telescope/telescope.nvim',
+			requires = {{'nvim-lua/plenary.nvim'}}
+		}
 end)
 
 return packer
