@@ -33,7 +33,7 @@ local set_keybindings = function()
         { "n", "<M-q>", "<CMD>:q!<CR>", noremap_silent },
 
         -- colorizer
-        { "n", "<A-c>", "<CMD>ColorizerToggle<CR>", noremap_silent },
+        { "n", "<CMD-c>", "<CMD>ColorizerToggle<CR>", noremap_silent },
 
         -- Search for visually selected text
         {
@@ -51,6 +51,9 @@ local set_keybindings = function()
 
         -- coc-restclient
         { "n", "<leader>0", "<CMD>CocCommand rest-client.request<CR>", noremap_silent },
+
+        -- colorizer
+        { "n", "<M-c>", "<CMD>ColorizerToggle<CR>", noremap_silent },
 
         -- coc.nvim
         {
