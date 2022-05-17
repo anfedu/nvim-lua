@@ -12,7 +12,7 @@ end
 
 local options = {
   cursorline = true,
-  termguicolors = false,
+  termguicolors = true,
   bg = 'dark',
   binary = true,
   bomb = true,
