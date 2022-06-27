@@ -5,10 +5,10 @@ require("nvim-treesitter.configs").setup({
         use_languagetree = true,
     },
     indent = {
-        enable = true,
+        enable = false,
     },
     rainbow = {
-        enable = true,
+        enable = false,
     },
     autopairs = {
         enable = true,

@@ -35,7 +35,7 @@ packer.startup(function()
     use({ "neoclide/coc.nvim" })
 
     -- Indentline
-    use({ "lukas-reineke/indent-blankline.nvim" }) 
+    -- use({ "lukas-reineke/indent-blankline.nvim" }) 
 
     -- Commentary
     use({ "terrortylor/nvim-comment" })
@@ -43,7 +43,7 @@ packer.startup(function()
     -- Explorer
     use({
         "kyazdani42/nvim-tree.lua",
-        requires = { "kyazdani42/nvim-web-devicons" },
+        -- requires = { "kyazdani42/nvim-web-devicons" },
     })
 
     -- multiple cursor
@@ -56,7 +56,7 @@ packer.startup(function()
     use({
         "glepnir/galaxyline.nvim",
         branch = "main", -- your statusline
-        requires = { "kyazdani42/nvim-web-devicons" },
+        -- requires = { "kyazdani42/nvim-web-devicons" },
     })
 
     use({
