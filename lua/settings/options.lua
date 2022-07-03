@@ -81,11 +81,3 @@ local options = {
 
 setOptions(options)
 
--- vim.api.nvim_exec(
---     [[
---         augroup JsonToJsonc
---             autocmd! FileType json set filetype=jsonc
---         augroup END
--- ]],
---     true
--- )
