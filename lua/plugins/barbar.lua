@@ -12,7 +12,7 @@ vim.g.bufferline = {
     -- icon_separator_active = '',
     -- icon_separator_inactive = '',
     icon_close_tab = "x",
-    icon_close_tab_modified = "? ",
+    icon_close_tab_modified = "?",
 
     -- Enable/disable close button
     closable = true,
