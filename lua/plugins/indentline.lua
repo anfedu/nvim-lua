@@ -1,7 +1,7 @@
 -- vim.opt.termguicolors = true
 -- <-- coloring space -->
-vim.cmd [[highlight IndentBlanklineIndent1 guibg=#1f1f1f gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guibg=#2a2a2a gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guibg=#2a2a2a gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guibg=#2e2e2e gui=nocombine]]
 -- <-- coloring space -->
 
 require("indent_blankline").setup {

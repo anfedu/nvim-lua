@@ -9,24 +9,24 @@ gls.right[2] = {
         provider = function()
             return ""
         end,
-        separator = "  ",
-        separator_highlight = { "#000000", colors.bg },
-        highlight = { colors.grey, "#000000" },
+        separator = " ",
+        separator_highlight = { "#181818", colors.bg },
+        highlight = { colors.grey, "#181818" },
     },
 }
 gls.right[3] = {
     PerCent = {
         provider = "LinePercent",
         separator = "",
-        separator_highlight = { colors.darkblue, "#000000" },
-        highlight = { colors.grey, "#000000" },
+        separator_highlight = { colors.darkblue, "#181818" },
+        highlight = { colors.grey, "#181818" },
     },
 }
 gls.right[4] = {
     ScrollBar = {
         provider = "ScrollBar",
         separator = " ",
-        separator_highlight = { colors.darkblue, "#000000" },
+        separator_highlight = { colors.darkblue, "#181818" },
         highlight = { "springgreen", colors.purple },
     },
 }
@@ -35,7 +35,7 @@ gls.right[4] = {
 --   BufferIcon = {
 --     provider= 'BufferIcon',
 --     separator = ' ',
---     separator_highlight = {colors.purple,'#000000'},
---     highlight = {colors.grey, '#000000'}
+--     separator_highlight = {colors.purple,'#181818'},
+--     highlight = {colors.grey, '#181818'}
 --   }
 -- }

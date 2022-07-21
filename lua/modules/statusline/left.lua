@@ -25,18 +25,18 @@ gls.left[1] = {
         provider = function()
             return "│"
         end,
-        highlight = { mode_color[vim.fn.mode()], "#000000" },
+        highlight = { mode_color[vim.fn.mode()], "#181818" },
     },
 }
 gls.left[2] = {
     ViMode = {
         provider = function()
-            vim.api.nvim_command("hi GalaxyViMode guibg=#000000 guifg=" .. mode_color[vim.fn.mode()])
+            vim.api.nvim_command("hi GalaxyViMode guibg=#181818 guifg=" .. mode_color[vim.fn.mode()])
             return "|> "
         end,
         separator = " ",
         separator_highlight = {
-            "#000000",
+            "#181818",
             function()
                 if not buffer_not_empty() then
                     return colors.bg
