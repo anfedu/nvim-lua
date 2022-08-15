@@ -11,6 +11,7 @@ local function setOptions(options)
 end
 
 local options = {
+  relativenumber = true,
   cursorline = true,
   termguicolors = true,
   bg = 'dark',

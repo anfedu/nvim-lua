@@ -3,7 +3,7 @@
   "javascript.validate.enable": true,
   "eslint.quiet": true,
   "tsserver.reportStyleChecksAsWarnings": false,
-  "rest-client.showHeaders": true,
+  "rest-client.showHeaders": false,
   "tsserver.tsconfigPath": "tsconfig.json",
   "coc.preferences.formatOnSaveFiletypes": [
     "sh",
