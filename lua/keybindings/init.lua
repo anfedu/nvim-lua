@@ -17,6 +17,7 @@ local set_keybindings = function()
         { "n", "<C-t>", "<CMD>tabnew<CR>", noremap_silent },
         { "n", "<C-j>", "<CMD>BufferNext<CR>", noremap_silent },
         { "n", "<C-k>", "<CMD>BufferPrevious<CR>", noremap_silent },
+        { "n", "<leader>d", "<CMD>BufferDelete<CR>", noremap_silent },
         { "n", "<leader>1", "<CMD>BufferGoto 1<CR>", noremap_silent },
         { "n", "<leader>2", "<CMD>BufferGoto 2<CR>", noremap_silent },
         { "n", "<leader>3", "<CMD>BufferGoto 3<CR>", noremap_silent },
@@ -29,7 +30,7 @@ local set_keybindings = function()
 
         -- custom save file
         { "n", "<C-S>", "<CMD>update!<CR>", noremap_silent },
-        -- { "n", "<M-q>", "<CMD>:q!<CR>", noremap_silent },
+        { "n", "<leader>q", "<CMD>:q!<CR>", noremap_silent },
 
         -- colorizer
         { "n", "<CMD-c>", "<CMD>ColorizerToggle<CR>", noremap_silent },
