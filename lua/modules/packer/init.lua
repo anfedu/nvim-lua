@@ -17,8 +17,20 @@ packer.startup(function()
 
     -- Auto pairs
     -- use({ "windwp/nvim-autopairs" })
-    use({ "jiangmiao/auto-pairs" })
-    use({ "tpope/vim-surround" })
+    -- use({ "jiangmiao/auto-pairs" })
+		use {
+			"windwp/nvim-autopairs",
+				config = function() require("nvim-autopairs").setup {} end
+		}
+		use({
+				"kylechui/nvim-surround",
+				tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+				config = function()
+						require("nvim-surround").setup({
+								-- Configuration here, or leave empty to use defaults
+						})
+				end
+		})
 
     -- use({ "machakann/vim-sandwich" })
 
@@ -60,8 +72,7 @@ packer.startup(function()
     })
 
     use({
-        "romgrk/barbar.nvim",
-        requires = { "kyazdani42/nvim-web-devicons" },
+        "romgrk/barbar.nvim"
     })
 
     -- colorshcme
@@ -70,11 +81,6 @@ packer.startup(function()
 
 		-- react snippets
 		use("epilande/vim-react-snippets")
-
-		-- git
-    -- use 'nvim-lua/plenary.nvim'
-    -- use 'ruifm/gitlinker.nvim'
-		-- use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
 		-- search 
 		use {
