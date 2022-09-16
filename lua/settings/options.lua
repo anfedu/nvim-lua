@@ -13,6 +13,7 @@ end
 local options = {
   relativenumber = true,
   cursorline = true,
+  cursorcolumn = true,
   termguicolors = true,
   bg = 'dark',
   binary = true,

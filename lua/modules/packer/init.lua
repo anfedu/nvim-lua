@@ -35,7 +35,7 @@ packer.startup(function()
     use({ "neoclide/coc.nvim" })
 
     -- Indentline
-    use({ "lukas-reineke/indent-blankline.nvim" }) 
+    -- use({ "lukas-reineke/indent-blankline.nvim" }) 
 
     -- Commentary
     use({ "terrortylor/nvim-comment" })
@@ -72,9 +72,9 @@ packer.startup(function()
 		use("epilande/vim-react-snippets")
 
 		-- git
-    use 'nvim-lua/plenary.nvim'
+    -- use 'nvim-lua/plenary.nvim'
     -- use 'ruifm/gitlinker.nvim'
-		use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+		-- use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
 		-- search 
 		use {
