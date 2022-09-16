@@ -16,8 +16,6 @@ packer.startup(function()
     use({ "wbthomason/packer.nvim", opt = true })
 
     -- Auto pairs
-    -- use({ "windwp/nvim-autopairs" })
-    -- use({ "jiangmiao/auto-pairs" })
 		use {
 			"windwp/nvim-autopairs",
 				config = function() require("nvim-autopairs").setup {} end
@@ -32,8 +30,6 @@ packer.startup(function()
 				end
 		})
 
-    -- use({ "machakann/vim-sandwich" })
-
     -- syntax
     use({
         "nvim-treesitter/nvim-treesitter",
@@ -46,16 +42,12 @@ packer.startup(function()
 		-- completion
     use({ "neoclide/coc.nvim" })
 
-    -- Indentline
-    -- use({ "lukas-reineke/indent-blankline.nvim" }) 
-
     -- Commentary
     use({ "terrortylor/nvim-comment" })
 
     -- Explorer
     use({
         "kyazdani42/nvim-tree.lua",
-        -- requires = { "kyazdani42/nvim-web-devicons" },
     })
 
     -- multiple cursor
@@ -68,7 +60,6 @@ packer.startup(function()
     use({
         "glepnir/galaxyline.nvim",
         branch = "main", -- your statusline
-        -- requires = { "kyazdani42/nvim-web-devicons" },
     })
 
     use({
