@@ -59,7 +59,7 @@ packer.startup(function()
     -- statusline
     use({
         "glepnir/galaxyline.nvim",
-        branch = "main", -- your statusline
+        branch = "main", 
     })
 
     use({
@@ -69,9 +69,6 @@ packer.startup(function()
     -- colorshcme
     use("glepnir/zephyr-nvim")
     use("norcalli/nvim-colorizer.lua")
-
-		-- react snippets
-		-- use("epilande/vim-react-snippets")
 
 		-- search 
 		use {
