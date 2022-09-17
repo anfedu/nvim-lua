@@ -71,7 +71,7 @@ packer.startup(function()
     use("norcalli/nvim-colorizer.lua")
 
 		-- react snippets
-		use("epilande/vim-react-snippets")
+		-- use("epilande/vim-react-snippets")
 
 		-- search 
 		use {
