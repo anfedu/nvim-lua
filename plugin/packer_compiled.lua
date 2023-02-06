@@ -69,11 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["auto-pairs"] = {
-    loaded = true,
-    path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/auto-pairs",
-    url = "https://github.com/jiangmiao/auto-pairs"
-  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/barbar.nvim",
@@ -94,10 +89,11 @@ _G.packer_plugins = {
     path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/galaxyline.nvim",
     url = "https://github.com/glepnir/galaxyline.nvim"
   },
-  ["gitlinker.nvim"] = {
+  ["nvim-autopairs"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
     loaded = true,
-    path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/gitlinker.nvim",
-    url = "https://github.com/ruifm/gitlinker.nvim"
+    path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
@@ -108,6 +104,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
+  },
+  ["nvim-surround"] = {
+    config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
+    loaded = true,
+    path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/nvim-surround",
+    url = "https://github.com/kylechui/nvim-surround"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -124,11 +126,6 @@ _G.packer_plugins = {
     path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
     url = "https://github.com/p00f/nvim-ts-rainbow"
   },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
   ["packer.nvim"] = {
     loaded = false,
     needs_bufread = false,
@@ -140,20 +137,15 @@ _G.packer_plugins = {
     path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["vim-multiple-cursors"] = {
     loaded = true,
     path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/vim-multiple-cursors",
     url = "https://github.com/terryma/vim-multiple-cursors"
-  },
-  ["vim-react-snippets"] = {
-    loaded = true,
-    path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/vim-react-snippets",
-    url = "https://github.com/epilande/vim-react-snippets"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/Users/achmad/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
   },
   ["zephyr-nvim"] = {
     loaded = true,
@@ -163,6 +155,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
+-- Config for: nvim-surround
+time([[Config for nvim-surround]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
+time([[Config for nvim-surround]], false)
 if should_profile then save_profiles(1) end
 
 end)

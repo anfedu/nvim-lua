@@ -7,10 +7,12 @@
   "tsserver.tsconfigPath": "tsconfig.json",
   "coc.preferences.formatOnSaveFiletypes": [
     "sh",
+    "go",
     "lua",
     "vim",
     "json",
     "yaml",
+    "graphql",
     "javascript",
     "typescript",
     "javascriptreact",

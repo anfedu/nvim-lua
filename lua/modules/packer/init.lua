@@ -31,13 +31,12 @@ packer.startup(function()
 		})
 
     -- syntax
-    use({
-        "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
-        requires = {
-            "p00f/nvim-ts-rainbow",
-        },
-    })
+   -- use ({
+   --      'nvim-treesitter/nvim-treesitter',
+   --      run = ':TSUpdate'
+   --  })
+    use({ 'sheerun/vim-polyglot' })
+    use({ 'folke/tokyonight.nvim' })
 
 		-- completion
     use({ "neoclide/coc.nvim" })
