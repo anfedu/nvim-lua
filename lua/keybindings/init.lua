@@ -15,8 +15,10 @@ local set_keybindings = function()
     local keybindings = {
         -- Buffers
         { "n", "<C-t>", "<CMD>tabnew<CR>", noremap_silent },
-        { "n", "<C-j>", "<CMD>BufferNext<CR>", noremap_silent },
-        { "n", "<C-k>", "<CMD>BufferPrevious<CR>", noremap_silent },
+        -- { "n", "<C-j>", "<CMD>BufferNext<CR>", noremap_silent },
+        -- { "n", "<C-k>", "<CMD>BufferPrevious<CR>", noremap_silent },
+        { "n", "<D-M-Left>", "<CMD>BufferPrevious<CR>", noremap_silent },
+        { "n", "<D-M-Right>", "<CMD>BufferNext<CR>", noremap_silent },
         { "n", "<leader>d", "<CMD>BufferDelete<CR>", noremap_silent },
         { "n", "<leader>1", "<CMD>BufferGoto 1<CR>", noremap_silent },
         { "n", "<leader>2", "<CMD>BufferGoto 2<CR>", noremap_silent },

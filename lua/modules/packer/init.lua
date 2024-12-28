@@ -20,6 +20,8 @@ packer.startup(function()
 			"windwp/nvim-autopairs",
 				config = function() require("nvim-autopairs").setup {} end
 		}
+
+    -- syntax
 		use({
 				"kylechui/nvim-surround",
 				tag = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -29,8 +31,6 @@ packer.startup(function()
 						})
 				end
 		})
-
-    -- syntax
    -- use ({
    --      'nvim-treesitter/nvim-treesitter',
    --      run = ':TSUpdate'
@@ -39,7 +39,9 @@ packer.startup(function()
     use({ 'folke/tokyonight.nvim' })
 
 		-- completion
-    use({ "neoclide/coc.nvim" })
+    use({ "neoclide/coc.nvim",
+        branch = "release", 
+        })
 
     -- Commentary
     use({ "terrortylor/nvim-comment" })
