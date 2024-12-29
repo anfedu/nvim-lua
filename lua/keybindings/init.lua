@@ -85,6 +85,7 @@ vim.api.nvim_exec(
     augroup Format
       autocmd filetype javascript nnoremap <F4> :w <bar> exec '!node '.shellescape('%')<CR>
       autocmd filetype typescript nnoremap <F4> :w <bar> exec '!npx ts-node '.shellescape('%')<CR>
+      autocmd filetype go nnoremap <F4> :w <bar> exec '!go run '.shellescape('%')<CR>
     augroup END
 ]],
     true
