@@ -5,7 +5,11 @@ require("barbar").setup({
     -- Enable/disable auto-hiding the tab bar when there is a single buffer
     auto_hide = false,
 
-    icons = {filetype ={enabled=false}},
+    icons = {filetype ={enabled=false,
+ close_tab = "x",
+    close_tab_modified = "?",
+
+    }},
 
     -- Enable/disable close button
     closable = true,

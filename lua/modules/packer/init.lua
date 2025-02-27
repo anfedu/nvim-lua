@@ -76,6 +76,11 @@ packer.startup(function()
 			'nvim-telescope/telescope.nvim',
 			requires = {{'nvim-lua/plenary.nvim'}}
 		}
+
+    use {'dsznajder/vscode-es7-javascript-react-snippets',
+        run = 'yarn install --frozen-lockfile && yarn compile'
+    }
+
 end)
 
 return packer
